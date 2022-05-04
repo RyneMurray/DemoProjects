@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="702.0" prefWidth="734.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.finalproject.HelloController">
+   <children>
+      <ComboBox fx:id="comboBox" layoutX="292.0" layoutY="570.0" prefWidth="150.0" />
+      <HBox layoutX="21.0" layoutY="570.0" prefHeight="100.0" prefWidth="326.0" spacing="10.0">
+         <children>
+            <Button fx:id="newGame" mnemonicParsing="false" onAction="#onNew" text="New Game" />
+            <Button fx:id="rollDice" mnemonicParsing="false" onAction="#onRoll" text="Roll Dice" />
+            <Button fx:id="holdOrReturn" mnemonicParsing="false" onAction="#onHold" text="Hold/Return Dice" />
+         </children>
+      </HBox>
+      <HBox layoutX="14.0" layoutY="98.0" prefHeight="26.0" prefWidth="340.0" spacing="20.0">
+         <children>
+            <Label fx:id="diceOne" text="Dice One" />
+            <Label fx:id="diceTwo" text="Dice Two" />
+            <Label fx:id="diceThree" text="Dice Three" />
+            <Label fx:id="diceFour" text="Dice Four" />
+            <Label fx:id="diceFive" text="Dice Five" />
+         </children>
+      </HBox>
+      <GridPane layoutX="450.0" layoutY="48.0" prefHeight="554.0" prefWidth="275.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Player 1" GridPane.columnIndex="1" />
+            <Label text="Player 2" GridPane.columnIndex="2" />
+            <Label prefHeight="10.0" prefWidth="90.0" text="Upper Section" />
+            <Label text="Aces" GridPane.rowIndex="1" />
+            <Label text="Twos" GridPane.rowIndex="2" />
+            <Label text="Threes" GridPane.rowIndex="3" />
+            <Label text="Fours" GridPane.rowIndex="4" />
+            <Label text="Fives" GridPane.rowIndex="5" />
+            <Label text="Sixes" GridPane.rowIndex="6" />
+            <Label text="Upper Total Score" GridPane.rowIndex="7" />
+            <Label text="Bonus" GridPane.rowIndex="8" />
+            <Label text="Lower Section" GridPane.rowIndex="9" />
+            <Label text="3 of a kind" GridPane.rowIndex="10" />
+            <Label text="4 of a kind" GridPane.rowIndex="11" />
+            <Label text="Full House" GridPane.rowIndex="12" />
+            <Label text="Small Straight" GridPane.rowIndex="13" />
+            <Label text="Large Straight" GridPane.rowIndex="14" />
+            <Label text="Yahtzee" GridPane.rowIndex="15" />
+            <Label text="Chance" GridPane.rowIndex="16" />
+            <Label text="Lower Total Score" GridPane.rowIndex="17" />
+            <Label text="Final Total Score" GridPane.rowIndex="18" />
+            <Button fx:id="acesScoreOne" mnemonicParsing="false" onAction="#acesPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Button fx:id="acesScoreTwo" mnemonicParsing="false" onAction="#acesPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Button fx:id="twosScoreOne" mnemonicParsing="false" onAction="#twosPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Button fx:id="twosScoreTwo" mnemonicParsing="false" onAction="#twosPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Button fx:id="threesScoreOne" mnemonicParsing="false" onAction="#threesPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Button fx:id="threesScoreTwo" mnemonicParsing="false" onAction="#threesPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Button fx:id="foursScoreOne" mnemonicParsing="false" onAction="#foursPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Button fx:id="foursScoreTwo" mnemonicParsing="false" onAction="#foursPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Button fx:id="fivesScoreOne" mnemonicParsing="false" onAction="#fivesPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <Button fx:id="fivesScoreTwo" mnemonicParsing="false" onAction="#fivesPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <Button fx:id="sixesScoreOne" mnemonicParsing="false" onAction="#sixesPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Button fx:id="sixesScoreTwo" mnemonicParsing="false" onAction="#sixesPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <Button fx:id="threeKindScoreOne" mnemonicParsing="false" onAction="#threeKindPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+            <Button fx:id="threeKindScoreTwo" mnemonicParsing="false" onAction="#threeKindPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <Button fx:id="fourKindScoreOne" mnemonicParsing="false" onAction="#fourKindPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="11" />
+            <Button fx:id="fourKindScoreTwo" mnemonicParsing="false" onAction="#fourKindPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+            <Button fx:id="fullHouseScoreOne" mnemonicParsing="false" onAction="#fullHousePressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="12" />
+            <Button fx:id="fullHouseScoreTwo" mnemonicParsing="false" onAction="#fullHousePressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="12" />
+            <Button fx:id="smallStraightScoreOne" mnemonicParsing="false" onAction="#smallStraightPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="13" />
+            <Button fx:id="smallStraightScoreTwo" mnemonicParsing="false" onAction="#smallStraightPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="13" />
+            <Button fx:id="largeStraightScoreOne" mnemonicParsing="false" onAction="#largeStraightPressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="14" />
+            <Button fx:id="largeStraightScoreTwo" mnemonicParsing="false" onAction="#largeStraightPressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="14" />
+            <Button fx:id="yahtzeeScoreOne" mnemonicParsing="false" onAction="#yahtzeePressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="15" />
+            <Button fx:id="yahtzeeScoreTwo" mnemonicParsing="false" onAction="#yahtzeePressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="15" />
+            <Button fx:id="chanceScoreOne" mnemonicParsing="false" onAction="#chancePressed" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="16" />
+            <Button fx:id="chanceScoreTwo" mnemonicParsing="false" onAction="#chancePressedTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="16" />
+            <Label fx:id="upperScoreSumOne" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label fx:id="upperScoreSumTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <Label fx:id="bonusOne" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+            <Label fx:id="bonusTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <Label fx:id="lowerScoreSumOne" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="17" />
+            <Label fx:id="lowerScoreSumTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="17" />
+            <Label fx:id="finalScoreOne" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="1" GridPane.rowIndex="18" />
+            <Label fx:id="finalScoreTwo" prefHeight="26.0" prefWidth="50.0" GridPane.columnIndex="2" GridPane.rowIndex="18" />
+            <Label text="Player 1" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+            <Label text="Player 2" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+         </children>
+      </GridPane>
+      <Label fx:id="output" layoutX="29.0" layoutY="439.0" prefHeight="17.0" prefWidth="384.0" />
+      <Label fx:id="playersInd" layoutX="184.0" layoutY="343.0" />
+      <Button fx:id="endButton" layoutX="532.0" layoutY="607.0" mnemonicParsing="false" onAction="#onEnd" text="End Game/Calculate Score" />
+   </children>
+</AnchorPane>
